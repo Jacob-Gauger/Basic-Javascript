@@ -24,7 +24,14 @@ function showOddNumbers(){
 }
 
 function addMultiplesToArray(){
-    const multiples = [];
+    let multiples = [];
+    for(let i = 1; i < (num + 1); i++){
+        if (i % 5 == 0){
+            multiples.push(i);
+        }
+    }
+    multiples.reverse();
+    console.log(multiples);
 }
 
 function printCarObject(){
