@@ -35,11 +35,27 @@ function addMultiplesToArray(){
 }
 
 function printCarObject(){
-
+    var a = document.getElementById("carType").type;
+    var b = document.getElementById("carMPG").type;
+    var c = document.getElementById("carColor").type;
+    let newCar = {
+        carType: a,
+        carMPG: b,
+        carYear: c
+    }
+    console.log(newCar);
 }
 
 function loadCar(index){
-    
+    if (index == 1){
+        console.log(carObject1);
+    }
+    if (index == 2){
+        console.log(carObject2);
+    }
+    if (index == 3){
+        console.log(carObject3);
+    }
 }
 
 function changeColor(index){
